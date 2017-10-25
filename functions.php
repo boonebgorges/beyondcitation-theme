@@ -27,3 +27,12 @@ function beyondcitation_header_image_data_fallback( $data ) {
 	return $data;
 }
 add_filter( 'theme_mod_header_image_data', 'beyondcitation_header_image_data_fallback' );
+
+/**
+ * Don't allow WP to trim excerpts on single DB pages.
+ */
+add_action( 'wp', function() {
+	if ( is_singular( 'bc_database' ) ) {
+		remove_filter( 'get_the_excerpt', 'responsive_custom_excerpt_more' );
+	}
+} );
