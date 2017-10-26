@@ -36,3 +36,81 @@ add_action( 'wp', function() {
 		remove_filter( 'get_the_excerpt', 'responsive_custom_excerpt_more' );
 	}
 } );
+
+/**
+ * Get a field group -> field mapping.
+ */
+function beyondcitation_field_groups() {
+	return array(
+		'overview' => array(
+			'title' => 'Overview',
+			'is_single' => true,
+			'fields' => array(
+				'bc_overview',
+			),
+		),
+		'facts' => array(
+			'title' => 'Facts',
+			'is_single' => false,
+			'fields' => array(
+				'date_range',
+				'publisher_name',
+				'link_publisher_about_page',
+				'type_object',
+				'geographic_location_original_materials',
+				'geographic_location_subject',
+				'image_exportable',
+				'facsimile_image',
+				'full_text_searchable',
+				'link_list_titles',
+			),
+		),
+		'history' => array(
+			'title' => 'History/Provenance',
+			'is_single' => false,
+			'fields' => array(
+				'original_catalog',
+				'original_microfilm',
+				'original_sources',
+				'history',
+			),
+		),
+		'review' => array(
+			'title' => 'Review',
+			'is_single' => true,
+			'fields' => array(
+				'third_party_reviews',
+			),
+		),
+		'access' => array(
+			'title' => 'Access',
+			'is_single' => false,
+			'fields' => array(
+				'link_worldcat',
+				'access',
+				'ill_conditions',
+			),
+		),
+		'publisher' => array(
+			'title' => 'Info from Publisher',
+			'is_single' => true,
+			'fields' => array(
+				'info_from_publisher',
+			),
+		),
+		'conversations' => array(
+			'title' => 'Conversations',
+			'is_single' => true,
+			'fields' => array(
+				'conversations',
+			),
+		),
+		'citing' => array(
+			'title' => 'Citing',
+			'is_single' => true,
+			'fields' => array(
+				'citing',
+			),
+		),
+	);
+}
