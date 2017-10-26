@@ -5,6 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$field_groups = beyondcitation_field_groups();
+$bc_fields = bc_get_database_fields();
+
 /**
  * Database template.
  */
@@ -28,7 +31,31 @@ get_header(); ?>
 				</div>
 				<!-- end of .post-entry -->
 
-				<?php get_template_part( 'post-data', get_post_type() ); ?>
+				<div class="db-data">
+					<nav class="db-tabs">
+						<ul>
+						<?php foreach ( $field_groups as $field_group_slug => $field_group ) : ?>
+							<li class="db-tab db-tab-<?php echo esc_attr( $field_group_slug ); ?>" id="db-tab-<?php echo esc_attr( $field_group_slug ); ?>" data-field-group="<?php echo esc_attr( $field_group_slug ); ?>">
+								<a href="#<?php echo esc_html( $field_group_slug ); ?>"><?php echo esc_html( $field_group['title'] ); ?></a>
+							</li>
+						<?php endforeach; ?>
+						</ul>
+					</nav>
+
+					<div class="db-field-groups">
+						<?php foreach ( $field_groups as $field_group_slug => $field_group ) : ?>
+							<div class="db-field-group db-field-groups-<?php echo esc_attr( $field_group_slug ); ?>" id="db-field_group-<?php echo esc_attr( $field_group_slug ); ?>" data-field-group="<?php echo esc_attr( $field_group_slug ); ?>">
+								<?php if ( $field_group['is_single'] ) : ?>
+									<p><?php echo wpautop( get_post_meta( get_the_ID(), reset( $field_group['fields'] ), true ) ); ?></p>
+								<?php else : ?>
+									<?php foreach ( $field_group['fields'] as $field_slug ) : ?>
+										<?php get_template_part( 'db-field', $field_slug ); ?>
+									<?php endforeach; ?>
+								<?php endif; ?>
+							</div>
+						<?php endforeach; ?>
+					</div>
+				</div>
 
 				<?php responsive_entry_bottom(); ?>
 			</div><!-- end of #post-<?php the_ID(); ?> -->

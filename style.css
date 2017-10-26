@@ -206,4 +206,29 @@ display: none;
 	color: #161869;
 }
 
+.db-tabs ul {
+	border-bottom: 1px solid #ccc;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.db-tab {
+	display: block;
+	float: left;
+	margin: 0 0 -1px 0;
+	outline: none;
+	width: auto;
+}
+
+.db-tab a {
+	border: 1px solid #ccc;
+	border-width: 1px 1px 0 1px;
+	display: block;
+	margin-right: 3px;
+	outline: none;
+	padding: 10px 16px;
+}
+
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
