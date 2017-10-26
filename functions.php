@@ -62,7 +62,7 @@ function beyondcitation_field_groups() {
 				'image_exportable',
 				'facsimile_image',
 				'full_text_searchable',
-				'link_list_titles',
+				'link_titles_list',
 			),
 		),
 		'history' => array(
