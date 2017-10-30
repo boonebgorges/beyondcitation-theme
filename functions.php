@@ -1,6 +1,14 @@
 <?php
 
 /**
+ * Enqueue static assets.
+ */
+function beyondcitation_enqueue_assets() {
+	wp_enqueue_script( 'beyond-citation', get_stylesheet_directory_uri() . '/assets/js/bc.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'beyondcitation_enqueue_assets' );
+
+/**
  * Provide a fallback value for header image.
  */
 function beyondcitation_header_image_fallback( $image ) {

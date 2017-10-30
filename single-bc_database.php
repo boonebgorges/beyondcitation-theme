@@ -44,14 +44,10 @@ get_header(); ?>
 
 					<div class="db-field-groups">
 						<?php foreach ( $field_groups as $field_group_slug => $field_group ) : ?>
-							<div class="db-field-group db-field-groups-<?php echo esc_attr( $field_group_slug ); ?>" id="db-field_group-<?php echo esc_attr( $field_group_slug ); ?>" data-field-group="<?php echo esc_attr( $field_group_slug ); ?>">
-								<?php if ( $field_group['is_single'] ) : ?>
-									<p><?php echo wpautop( get_post_meta( get_the_ID(), reset( $field_group['fields'] ), true ) ); ?></p>
-								<?php else : ?>
-									<?php foreach ( $field_group['fields'] as $field_slug ) : ?>
-										<?php get_template_part( 'db-field', $field_slug ); ?>
-									<?php endforeach; ?>
-								<?php endif; ?>
+							<div class="db-field-group db-field-groups-<?php echo esc_attr( $field_group_slug ); ?>" id="db-field-group-<?php echo esc_attr( $field_group_slug ); ?>" data-field-group="<?php echo esc_attr( $field_group_slug ); ?>">
+								<?php foreach ( $field_group['fields'] as $field_slug ) : ?>
+									<?php get_template_part( 'db-field', $field_slug ); ?>
+								<?php endforeach; ?>
 							</div>
 						<?php endforeach; ?>
 					</div>

@@ -228,7 +228,17 @@ li.db-tab {
 	display: block;
 	margin-right: 3px;
 	outline: none;
-	padding: 10px 16px;
+	padding: 10px 11px;
+}
+
+.db-tab.current-db-tab a {
+	background: #ddd;
+}
+
+.db-field-groups {
+	border: 1px solid #ccc;
+	border-width: 0 1px 1px 1px;
+	padding: 16px;
 }
 
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
