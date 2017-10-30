@@ -7,6 +7,9 @@ $field_slug = $GLOBALS['field_slug'];
 $field_info = $GLOBALS['bc_fields'][ $field_slug ];
 
 $field_data = get_post_meta( get_the_ID(), $field_slug, true );
+if ( 'checkbox' === $field_info['type'] ) {
+	$field_data = ! empty( $field_data ) ? 'Yes' : 'No';
+}
 
 if ( $field_data ) {
 	if ( ! $field_group_info['is_single'] ) {
