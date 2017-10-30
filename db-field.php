@@ -13,7 +13,9 @@ if ( $field_data ) {
 		$field_data = '<strong>' . esc_html( $field_info['title'] ) . ':</strong> ' . $field_data;
 	}
 
+	$field_data = wptexturize( $field_data );
 	$field_data = wpautop( $field_data );
+	$field_data = make_clickable( $field_data );
 
 	echo $field_data;
 }
