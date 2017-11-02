@@ -13,10 +13,13 @@
 		$field_group_datas.hide();
 		$field_group_tabs.removeClass('current-db-tab');
 
-
 		// Strip leading hash.
 		var currentHash = document.location.hash;
 		var currentHashName = currentHash.substr( 1 );
+
+		if ( ! currentHashName.length ) {
+			currentHashName = 'overview';
+		}
 
 		$('#db-tab-' + currentHashName).addClass('current-db-tab');
 		$('#db-field-group-' + currentHashName).show();
