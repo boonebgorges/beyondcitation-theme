@@ -145,12 +145,16 @@ display: none;
 /* =Hide “by”
 ————————————————————– */
 .byline {
-display: none;
+	display: none;
 }
 /* =Hide author
 ————————————————————– */
 .post-meta .author.vcard {
-display: none;
+	display: none;
+}
+
+.post-meta .timestamp {
+	border-right: none;
 }
 
 .post-meta .posted-in {
