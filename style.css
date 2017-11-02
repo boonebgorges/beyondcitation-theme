@@ -149,7 +149,7 @@ display: none;
 }
 /* =Hide author
 ————————————————————– */
-.author {
+.post-meta .author.vcard {
 display: none;
 }
 
