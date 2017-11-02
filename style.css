@@ -153,6 +153,10 @@ display: none;
 display: none;
 }
 
+.post-meta .posted-in {
+	display: none;
+}
+
 .navigation {
 display: none;
 }
