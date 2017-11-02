@@ -44,6 +44,8 @@ get_header(); ?>
 
 					<div class="db-field-groups">
 						<?php foreach ( $field_groups as $field_group_slug => $field_group ) : ?>
+							<a name="<?php echo esc_attr( $field_group_slug ); ?>">&nbsp;</a>
+							<h2 class="db-field-group-header"><?php echo esc_html( $field_group['title'] ); ?></h2>
 							<div class="db-field-group db-field-groups-<?php echo esc_attr( $field_group_slug ); ?>" id="db-field-group-<?php echo esc_attr( $field_group_slug ); ?>" data-field-group="<?php echo esc_attr( $field_group_slug ); ?>">
 								<?php foreach ( $field_group['fields'] as $field_slug ) : ?>
 									<?php get_template_part( 'db-field', $field_slug ); ?>

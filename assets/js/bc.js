@@ -4,6 +4,8 @@
 	$(document).ready(function(){
 		$field_group_datas = $('.db-field-group');
 		$field_group_tabs = $('.db-tab');
+
+		$('.db-field-group-header').addClass('screen-reader-text');
 		refreshTabStatus();
 
 		window.onhashchange = refreshTabStatus;
