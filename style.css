@@ -249,4 +249,333 @@ li.db-tab {
 	padding: 16px;
 }
 
-/*The last 29 days of the month are the hardest."- Nikola Tesla*/
+/* Essay Posts
+-------------------------------------------------------------- */
+
+.essays-template-default .essays {
+  margin: 0 auto;
+  max-width: 750px;
+	font-size: 18px;
+	line-height: 1.5;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+.essays-template-default p {
+  margin: 0.7em 0;
+}
+
+.essays-template-default .post-entry h1 {
+  margin: 1.5em 0 0.7em;
+  font-size: 32px;
+}
+
+.essays-template-default h2 {
+  margin: 1.2em 0 0.7em;
+  font-size: 22px;
+}
+
+.essays-template-default h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+table h1, table h2, table h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.essays-template-default blockquote {
+  font-size: 22px;
+  background-color: #fff;
+  border-left: 8px solid #EDEDED;
+  padding: 0 1.2em;
+  margin: 1.2em 0;
+}
+
+sup {
+  font-size: 70%;
+  padding: 1px;
+}
+
+.footnotes::before {
+    width: 55px;
+    content: "";
+    border-top: 1px solid #e5e5e5;
+    display: none;
+    margin: 0 0 1.5em;
+}
+
+.footnotes {
+  border-top: 1px solid #e5e5e5;
+  padding: 1.5em 0 0.5em;
+}
+
+sup.footnote a {
+  text-decoration: underline;
+  color: #FF901A;
+}
+
+.essays-template-default blockquote p {
+  margin: 0;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.wp-caption {
+  max-width: 100%;
+  background: none;
+  border: 0 solid;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+}
+
+.essays-template-default .wp-caption img {
+  max-width: 100%;
+}
+
+.essays-template-default .post-meta {
+  display: none;
+}
+
+.essays-template-default .entry-title {
+  margin-bottom: 0.2em;
+}
+
+.essays-template-default .post-entry {
+  margin-top: 2em;
+}
+
+.essays-post-subtitle {
+  margin-top: 0.2em;
+  padding-top: 0.2em;
+  border-top: 1px solid #e5e5e5;
+  font-size: 1.7em;
+  line-height: 1.1em;
+  margin-bottom: 0.4em;
+  font-weight: 700;
+}
+
+.essays-post-byline {
+  font-size: 18px;
+  color: #666;
+}
+
+.essays-post-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.essays-post-byline .byline-highlight {
+  background-color: /*#e3edf9*/ #eee;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.essays-post-bibliography h1,
+.essays-post-endnotes h1,
+.essays-post-editors_note h2 {
+  margin: 1.5em 0 1em;
+  padding-top: 0.6em;
+  font-size: 32px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.essays-post-bibliography strong{
+  font-weight: 600;
+  background-color: /*#e3edf9*/ #eee;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.essays-post-bibliography p {
+  margin: 1.2em 0;
+}
+
+.essays-post-bibliography .bibliography-content {
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+
+.essays-post-intro {
+  margin: 30px 0;
+  background-color: #eee;
+  padding: 2px 20px 17px;
+  border-radius: 5px;
+}
+
+.essays-post-intro .editors_introduction {
+  margin-bottom: 20px;
+}
+
+.essays-post-intro .introduction_author::before {
+    width: 55px;
+    content: "";
+    border-top: 1px solid #999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.essays-post-intro .introduction_author {
+  font-size: 18px;
+  color: #666;
+  padding-left: 20px;
+}
+
+.essays-post-intro .introduction_date {
+  font-size: 14px;
+  color: #666;
+  padding-left: 20px;
+}
+
+.essays-post-editors_note .editors_note {
+    margin: 30px 0;
+    background-color: #eee;
+    padding: 2px 20px 10px;
+    border-radius: 5px;
+}
+
+.essays-post-editors_note .editors_note h1 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  color: #666;
+  margin: 15px 0 10px;
+}
+
+/* Blog Posts
+-------------------------------------------------------------- */
+
+.blog-template-default .blog {
+  margin: 0 auto;
+  overflow-x: hidden;
+  max-width: 750px;
+	font-size: 18px;
+	line-height: 1.5;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+
+.blog-template-default p {
+  margin: 0.7em 0;
+}
+
+.blog-template-default .post-entry h1 {
+  margin: 1.5em 0 0.7em;
+  font-size: 32px;
+}
+
+.blog-template-default h2 {
+  margin: 1.2em 0 0.7em;
+  font-size: 22px;
+}
+
+.blog-template-default blockquote {
+  font-size: 22px;
+  background-color: #fff;
+  border-left: 8px solid #EDEDED;
+  padding: 0 1.2em;
+  margin: 0.7em 0;
+}
+
+.blog-template-default blockquote p {
+  margin: 0;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+
+.blog-template-default .post-meta {
+  display: none;
+}
+
+.blog-template-default .entry-title {
+  margin-bottom: 0.3em;
+}
+
+.blog-post-byline {
+  font-size: 14px;
+  color: #555;
+}
+
+.blog-post-byline .byline-highlight {
+  background-color: /*#e3edf9*/ #eee;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Posts Archive
+-------------------------------------------------------------- */
+
+.post-type-archive-blog #widgets,
+.post-type-archive-essays #widgets {
+  display: none;
+}
+
+.post-type-archive-blog #content-archive, .post-type-archive-essays #content-archive {
+  margin-top: 0;
+}
+
+.post-type-archive-blog .entry-title,
+.post-type-archive-essays .entry-title {
+  margin-bottom: 0.2em;
+}
+
+.post-type-archive-essays .post-meta
+ {
+   display: none;
+ }
+
+ .post-type-archive-blog .post-entry p,
+ .post-type-archive-essays .post-entry p {
+   margin: 0.7em 0 0.5em;
+ }
+
+ .post-type-archive-blog .blog,
+ .post-type-archive-essays .essays {
+   margin: 2.5em auto;
+   padding-bottom: 1em;
+   max-width: 750px;
+   border-bottom: 1px solid #e5e5e5;
+ }
+
+  .post-type-archive-blog .breadcrumb-list,
+  .post-type-archive-essays .breadcrumb-list {
+    padding-bottom: 1em;
+  }
+
+
+/* Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+  #wrapper {
+    padding: 20px 12px 20px 12px;
+  }
+
+  #container{
+    padding: 0;
+  }
+
+  .essays-post-intro {
+    padding: 2px 12px 20px;
+  }
+
+  .essays-post-intro .editors_introduction {
+    font-size: 17px;
+  }
+
+}
+
+/* Makes tables responsive as long as class="responsive" is added to the table tag in the markup */
+@media only screen and (max-width: 600px) {
+  table.responsive {
+    margin-bottom: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+  }
+}

@@ -30,7 +30,7 @@ Template Name:  Sidebar/Content
 		<?php while( have_posts() ) : the_post(); ?>
 
 			<?php get_responsive_breadcrumb_lists(); ?>
-			
+
 			<?php echo apply_filters('the_content', get_post_meta($post->ID, 'date_range', true)); ?>
 			<?php responsive_entry_before(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -50,7 +50,7 @@ Template Name:  Sidebar/Content
 						<?php endif; ?>
 					</div><!-- end of .post-meta -->
 				<?php endif; ?>
-				
+
 				<div class="post-entry">
 					<?php the_content( __( 'Learn more &#8250;', 'responsive' ) ); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="pagination">' . __( 'Pages:', 'responsive' ), 'after' => '</div>' ) ); ?>
