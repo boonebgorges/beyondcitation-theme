@@ -133,8 +133,8 @@ function create_posttypes() {
             'singular_name' => __( 'Blog Post' )
         ),
         'public' => true,
-        'has_archive' => 'blog-posts',
-        'rewrite' => array('slug' => 'blog'),
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'blog-posts'),
         'menu_icon' => 'dashicons-format-quote'
     )
   );
