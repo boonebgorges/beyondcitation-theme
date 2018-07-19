@@ -57,7 +57,7 @@ get_header(); ?>
         </div>
 
         <div class="essays-post-byline">
-          By <span><?php the_field('author'); ?></span>
+          By <span><a href="<?php the_field('author_link_destination'); ?>"><?php the_field('author'); ?></a></span>
         </div>
         <div class="essays-post-date">
           Published <span><?php the_field('essay_date'); ?></span>
@@ -71,8 +71,10 @@ get_header(); ?>
 				<!-- end of .post-entry -->
 
         <div class="essays-post-bibliography">
-          <h1>Bibliography</h1>
-          <div class="bibliography-content"><?php the_field('bibliography'); ?></div>
+          <?php if( get_field('bibliography') ): ?>
+            <h1>Bibliography</h1>
+            <div class="bibliography-content"><?php the_field('bibliography'); ?></div>
+          <?php endif; ?>
         </div>
 
         <div class="essays-post-editors_note">

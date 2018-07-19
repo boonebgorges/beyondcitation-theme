@@ -130,10 +130,10 @@ function create_posttypes() {
     array(
         'labels' => array(
             'name' => __( 'Blog' ),
-            'singular_name' => __( 'Blog' )
+            'singular_name' => __( 'Blog Post' )
         ),
         'public' => true,
-        'has_archive' => true,
+        'has_archive' => 'blog-posts',
         'rewrite' => array('slug' => 'blog'),
         'menu_icon' => 'dashicons-format-quote'
     )
@@ -275,6 +275,19 @@ if(function_exists("register_field_group"))
 				'default_value' => '',
 				'placeholder' => '',
 				'prepend' => 'by',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5af22ddb8fed3',
+				'label' => 'Author Link Destination',
+				'name' => 'author_link_destination',
+				'type' => 'text',
+				'instructions' => 'The name of the author will appear as a link. Enter the URL that the author\'s name should link to. By default it will link to the contributor\'s page.',
+				'default_value' => 'https://www.beyondcitation.org/contributors/',
+				'placeholder' => '',
+				'prepend' => '',
 				'append' => '',
 				'formatting' => 'html',
 				'maxlength' => '',
