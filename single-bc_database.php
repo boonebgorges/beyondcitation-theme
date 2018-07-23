@@ -28,6 +28,7 @@ get_header(); ?>
 
 				<div class="post-entry">
 					<?php the_excerpt(); ?>
+					<p><?php echo bc_display_widget_generator( array( 'database' => get_queried_object()->post_name ) ); ?></p>
 				</div>
 				<!-- end of .post-entry -->
 
